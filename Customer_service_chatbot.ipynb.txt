@@ -1,0 +1,94 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7LmazWqphZZB",
+        "outputId": "dd16b1fa-a2af-46d4-b558-e0457a0fdc3a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Customer Service Chatbot\n",
+            "Type 'bye' to exit.\n",
+            "\n",
+            "You: Hi\n",
+            "Bot: Hello! Welcome to our customer service. How can I help you?\n",
+            "You: help\n",
+            "Bot: I can help you with hours, delivery, payment, orders, returns, and contact information.\n",
+            "You: open\n",
+            "Bot: Our customer service is available from 9 AM to 6 PM.\n",
+            "You: time\n",
+            "Bot: Sorry, I don't understand your question. Please try again.\n",
+            "You: bye\n",
+            "Bot: Thank you for contacting us. Goodbye!\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "print(\"Customer Service Chatbot\")\n",
+        "print(\"Type 'bye' to exit.\")\n",
+        "print()\n",
+        "\n",
+        "while True:\n",
+        "\n",
+        "    user = input(\"You: \").lower().strip()\n",
+        "\n",
+        "    if user == \"bye\" or user == \"exit\":\n",
+        "        print(\"Bot: Thank you for contacting us. Goodbye!\")\n",
+        "        break\n",
+        "\n",
+        "    elif \"hello\" in user or \"hi\" in user or \"hey\" in user:\n",
+        "        print(\"Bot: Hello! Welcome to our customer service. How can I help you?\")\n",
+        "\n",
+        "    elif \"hours\" in user or \"open\" in user:\n",
+        "        print(\"Bot: Our customer service is available from 9 AM to 6 PM.\")\n",
+        "\n",
+        "    elif \"delivery\" in user or \"shipping\" in user:\n",
+        "        print(\"Bot: Delivery usually takes 3–5 business days.\")\n",
+        "\n",
+        "    elif \"payment\" in user or \"pay\" in user:\n",
+        "        print(\"Bot: We accept online and card payments.\")\n",
+        "\n",
+        "    elif \"return\" in user or \"refund\" in user:\n",
+        "        print(\"Bot: You can request a return according to our return policy.\")\n",
+        "\n",
+        "    elif \"order\" in user or \"track\" in user:\n",
+        "        print(\"Bot: Please provide your order number to track your order.\")\n",
+        "\n",
+        "    elif \"contact\" in user or \"support\" in user:\n",
+        "        print(\"Bot: You can contact our support team during working hours.\")\n",
+        "\n",
+        "    elif \"location\" in user or \"address\" in user:\n",
+        "        print(\"Bot: Our customer service office is located in Kolkata.\")\n",
+        "\n",
+        "    elif \"help\" in user:\n",
+        "        print(\"Bot: I can help you with hours, delivery, payment, orders, returns, and contact information.\")\n",
+        "\n",
+        "    else:\n",
+        "        print(\"Bot: Sorry, I don't understand your question. Please try again.\")"
+      ]
+    }
+  ]
+}
