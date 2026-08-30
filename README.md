@@ -39,5 +39,6 @@ This project was created to learn the basics of chatbot development and Natural 
 - Connect the chatbot to a database
 
   ## 📸 Screenshot
+  [customer service chatbot](Screenshot_2026-08-30-12-55-51-41_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 
