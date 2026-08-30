@@ -37,3 +37,7 @@ This project was created to learn the basics of chatbot development and Natural 
 - Use NLP techniques
 - Add a graphical user interface
 - Connect the chatbot to a database
+
+  ## 📸 Screenshot
+
+
